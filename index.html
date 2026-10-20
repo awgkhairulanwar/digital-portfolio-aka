@@ -289,6 +289,18 @@ footer a:hover{color:var(--t1)}
 .sheet figcaption span{font-size:13.5px;color:var(--t3)}
 .sheet-nav{display:flex;gap:10px}
 
+
+/* cursor glow */
+.glow{position:absolute;left:0;top:0;width:680px;height:680px;margin:-340px 0 0 -340px;border-radius:50%;pointer-events:none;
+  background:radial-gradient(closest-side,rgba(180,140,255,.55) 0%,rgba(143,92,240,.32) 35%,rgba(228,194,122,.16) 58%,rgba(180,140,255,0) 75%);
+  filter:blur(24px);mix-blend-mode:screen;opacity:0;transition:opacity .7s;will-change:transform;transform:translate3d(50vw,30vh,0)}
+.glow.on{opacity:1}
+.glass::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .4s;
+  background:radial-gradient(420px circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.10),rgba(228,194,122,.05) 40%,transparent 65%)}
+.glass:hover::after{opacity:1}
+@media (hover:none),(pointer:coarse){.glow,.glass::after{display:none}}
+@media (prefers-reduced-motion:reduce){.glow{display:none}}
+
 /* motion */
 .js .rv.pre{opacity:0;transform:translateY(24px) scale(.985)}
 .rv{transition:opacity .8s var(--spring),transform .8s var(--spring),border-color .3s;transition-delay:var(--d,0s)}
@@ -331,7 +343,7 @@ footer a:hover{color:var(--t1)}
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23B48CFF'/%3E%3Cstop offset='1' stop-color='%234A2296'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='-apple-system,Segoe UI,Arial,sans-serif' font-size='26' font-weight='700' fill='%23F5DFA3'%3EAK%3C/text%3E%3C/svg%3E">
 </head>
 <body>
-<div class="wall" aria-hidden="true"><i class="o1"></i><i class="o2"></i><i class="o3"></i><i class="o4"></i></div>
+<div class="wall" aria-hidden="true"><i class="o1"></i><i class="o2"></i><i class="o3"></i><i class="o4"></i><span class="glow" id="glow"></span></div>
 <div class="progress" id="progress" aria-hidden="true"></div>
 
 <header class="top" id="top">
@@ -678,6 +690,15 @@ footer a:hover{color:var(--t1)}
     if(dy>110){close(); return;} sheet.style.transform='';
     if(Math.abs(dx)>60&&Math.abs(dx)>dy) show(idx+(dx<0?1:-1));});
 
+
+  // cursor-following glow + glass highlight
+  if(window.matchMedia&&matchMedia('(hover:hover) and (pointer:fine)').matches&&!reduce){
+    var gl=$('#glow'), tx=innerWidth/2, ty=innerHeight*.3, cx=tx, cy=ty, run=false;
+    function tick(){cx+=(tx-cx)*.12; cy+=(ty-cy)*.12; gl.style.transform='translate3d('+cx+'px,'+cy+'px,0)'; if(Math.abs(tx-cx)>.5||Math.abs(ty-cy)>.5) requestAnimationFrame(tick); else run=false;}
+    addEventListener('pointermove',function(e){tx=e.clientX; ty=e.clientY; gl.classList.add('on'); if(!run){run=true; requestAnimationFrame(tick);}
+      var g=e.target.closest&&e.target.closest('.glass'); if(g){var r=g.getBoundingClientRect(); g.style.setProperty('--mx',(e.clientX-r.left)+'px'); g.style.setProperty('--my',(e.clientY-r.top)+'px');}},{passive:true});
+    d.documentElement.addEventListener('pointerleave',function(){gl.classList.remove('on')});
+  }
   if(reduce||!('IntersectionObserver' in window)) return;
   var els=$$('.rv'), groups=new Map();
   els.forEach(function(el){var r=el.getBoundingClientRect(); if(r.top>innerHeight*.95){var p=el.parentElement,n=groups.get(p)||0; groups.set(p,n+1); el.style.setProperty('--d',Math.min(n,4)*.07+'s'); el.classList.add('pre');}});
