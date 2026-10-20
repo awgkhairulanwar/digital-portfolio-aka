@@ -10,7 +10,7 @@
 :root{
   color-scheme:dark;
   --bg:#110820; --bg-2:#1A0D31;
-  --t1:#F7F3FF; --t2:rgba(236,228,255,.72); --t3:rgba(236,228,255,.52);
+  --t1:#F7F3FF; --t2:rgba(242,236,255,.88); --t3:rgba(238,231,255,.70);
   --sep:rgba(255,255,255,.10);
   --glass:linear-gradient(180deg,rgba(255,255,255,.115) 0%,rgba(255,255,255,.045) 100%);
   --glass-solid:rgba(38,22,66,.62);
@@ -50,7 +50,7 @@ a{color:inherit;text-decoration:none}
 .wall::after{content:"";position:absolute;inset:0;opacity:.06;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 
 /* glass material */
-.glass{position:relative;background:var(--glass);-webkit-backdrop-filter:blur(30px) saturate(175%);backdrop-filter:blur(30px) saturate(175%);border:1px solid var(--stroke);box-shadow:var(--hi),var(--drop);border-radius:28px}
+.glass{position:relative;background:var(--glass),rgba(18,9,34,.42);-webkit-backdrop-filter:blur(30px) saturate(175%);backdrop-filter:blur(30px) saturate(175%);border:1px solid var(--stroke);box-shadow:var(--hi),var(--drop);border-radius:28px}
 @supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.glass{background:var(--glass-solid)}}
 
 /* metallic text */
@@ -290,13 +290,21 @@ footer a:hover{color:var(--t1)}
 .sheet-nav{display:flex;gap:10px}
 
 
+
+/* readability over the glow */
+body{text-shadow:0 1px 2px rgba(8,3,18,.45)}
+.lede,.head p,.tags li,.across li,.hero .chip{text-shadow:0 1px 3px rgba(8,3,18,.7),0 0 18px rgba(8,3,18,.55)}
+.ms,.mp,.mg,.ms *,.mp *,.mg *{text-shadow:none}
+.ms,.mp,.mg{filter:drop-shadow(0 2px 5px rgba(8,3,18,.5)) drop-shadow(0 0 20px rgba(8,3,18,.3))}
+.btn-gold,.btn-gold *,.step .n,.out-ic,.seal .core,.brand .mono{text-shadow:none}
+
 /* cursor glow */
 .glow{position:absolute;left:0;top:0;width:680px;height:680px;margin:-340px 0 0 -340px;border-radius:50%;pointer-events:none;
-  background:radial-gradient(closest-side,rgba(180,140,255,.55) 0%,rgba(143,92,240,.32) 35%,rgba(228,194,122,.16) 58%,rgba(180,140,255,0) 75%);
-  filter:blur(24px);mix-blend-mode:screen;opacity:0;transition:opacity .7s;will-change:transform;transform:translate3d(50vw,30vh,0)}
+  background:radial-gradient(closest-side,rgba(160,115,245,.40) 0%,rgba(124,75,219,.24) 38%,rgba(228,194,122,.10) 60%,rgba(160,115,245,0) 76%);
+  filter:blur(28px);opacity:0;transition:opacity .7s;will-change:transform;transform:translate3d(50vw,30vh,0)}
 .glow.on{opacity:1}
 .glass::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .4s;
-  background:radial-gradient(420px circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.10),rgba(228,194,122,.05) 40%,transparent 65%)}
+  background:radial-gradient(420px circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.06),rgba(228,194,122,.035) 40%,transparent 65%)}
 .glass:hover::after{opacity:1}
 @media (hover:none),(pointer:coarse){.glow,.glass::after{display:none}}
 @media (prefers-reduced-motion:reduce){.glow{display:none}}
