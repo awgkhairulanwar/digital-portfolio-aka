@@ -1,0 +1,697 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Awang Khairul Anwar</title>
+<meta name="description" content="Portfolio of Awang Khairul Anwar bin Azaman: HR governance, compliance and HR digitalisation, Kuching, Sarawak.">
+<meta name="theme-color" content="#140A24">
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#110820; --bg-2:#1A0D31;
+  --t1:#F7F3FF; --t2:rgba(236,228,255,.72); --t3:rgba(236,228,255,.52);
+  --sep:rgba(255,255,255,.10);
+  --glass:linear-gradient(180deg,rgba(255,255,255,.115) 0%,rgba(255,255,255,.045) 100%);
+  --glass-solid:rgba(38,22,66,.62);
+  --stroke:rgba(255,255,255,.14);
+  --hi:inset 0 1px 0 rgba(255,255,255,.22), inset 0 -1px 0 rgba(255,255,255,.04);
+  --drop:0 30px 60px -30px rgba(0,0,0,.7), 0 10px 24px -12px rgba(0,0,0,.45);
+  --violet:#8F5CF0; --violet-2:#B48CFF; --violet-3:#5B2DB0;
+  --gold:#E4C27A; --gold-2:#F5DFA3; --gold-3:#B8862E;
+  --m-purple:linear-gradient(175deg,#FBF7FF 0%,#DCC6FF 30%,#A57BF2 58%,#7444D2 78%,#C6A6FF 100%);
+  --m-gold:linear-gradient(175deg,#FFF8E1 0%,#F4DA98 32%,#D2A54C 60%,#A9782A 80%,#F0D594 100%);
+  --m-silver:linear-gradient(175deg,#FFFFFF 0%,#F1ECF8 40%,#C9C0DA 70%,#F4F0FA 100%);
+  --g-gold:linear-gradient(135deg,#FBEFC6 0%,#E3BF6A 38%,#B8862E 72%,#EFD38E 100%);
+  --g-purple:linear-gradient(145deg,#B48CFF 0%,#7C4BDB 45%,#4A2296 100%);
+  --font:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Segoe UI Variable","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --spring:cubic-bezier(.32,.72,0,1);
+  --gut:clamp(16px,4.5vw,56px); --max:1180px;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;scroll-padding-top:96px;background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--t1);font-family:var(--font);font-size:16.5px;line-height:1.55;letter-spacing:-.011em;padding-inline:var(--gut);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+.wrap{position:relative;z-index:2;max-width:var(--max);margin-inline:auto}
+a{color:inherit;text-decoration:none}
+::selection{background:rgba(180,140,255,.45);color:#fff}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:10px}
+.ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+
+/* wallpaper */
+.wall{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;background:radial-gradient(120% 90% at 50% 0%,#24113F 0%,#140A24 55%,#0D0618 100%)}
+.wall i{position:absolute;border-radius:50%;filter:blur(80px);will-change:transform}
+.wall .o1{width:60vmax;height:60vmax;left:-18vmax;top:-20vmax;background:radial-gradient(closest-side,rgba(124,75,219,.75),rgba(124,75,219,0));animation:d1 34s ease-in-out infinite alternate}
+.wall .o2{width:46vmax;height:46vmax;right:-14vmax;top:18vh;background:radial-gradient(closest-side,rgba(196,150,62,.42),rgba(196,150,62,0));animation:d2 40s ease-in-out infinite alternate}
+.wall .o3{width:56vmax;height:56vmax;left:20vw;bottom:-28vmax;background:radial-gradient(closest-side,rgba(150,70,190,.55),rgba(150,70,190,0));animation:d3 46s ease-in-out infinite alternate}
+.wall .o4{width:30vmax;height:30vmax;left:8vw;top:55vh;background:radial-gradient(closest-side,rgba(228,194,122,.25),rgba(228,194,122,0));animation:d2 38s ease-in-out infinite alternate-reverse}
+@keyframes d1{to{transform:translate(14vw,10vh) scale(1.1)}}
+@keyframes d2{to{transform:translate(-12vw,14vh) scale(.92)}}
+@keyframes d3{to{transform:translate(-10vw,-12vh) scale(1.12)}}
+.wall::after{content:"";position:absolute;inset:0;opacity:.06;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* glass material */
+.glass{position:relative;background:var(--glass);-webkit-backdrop-filter:blur(30px) saturate(175%);backdrop-filter:blur(30px) saturate(175%);border:1px solid var(--stroke);box-shadow:var(--hi),var(--drop);border-radius:28px}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.glass{background:var(--glass-solid)}}
+
+/* metallic text */
+.mp{color:var(--violet-2);background:var(--m-purple);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.mg{color:var(--gold);background:var(--m-gold);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.ms{color:#fff;background:var(--m-silver);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+
+/* gold motifs */
+.tab{position:absolute;width:58px;height:3px;border-radius:2px;background:var(--g-gold);z-index:3}
+.tab.tl{left:22px;top:-1.5px} .tab.br{right:22px;bottom:-1.5px}
+.goldbar{display:block;width:64px;height:4px;border-radius:2px;background:var(--g-gold);margin-top:16px}
+.dots{position:absolute;width:110px;height:90px;fill:var(--gold);opacity:.35;pointer-events:none}
+.arcs{position:absolute;pointer-events:none;fill:none;stroke:var(--gold)}
+
+/* app icon (squircle) */
+.app{width:52px;height:52px;border-radius:15px;display:grid;place-items:center;color:var(--gold-2);background:var(--g-purple);box-shadow:inset 0 1px 0 rgba(255,255,255,.35),inset 0 -2px 0 rgba(0,0,0,.2),0 10px 22px -10px rgba(91,45,176,.9);flex:0 0 auto}
+.app .ic{width:24px;height:24px;stroke-width:1.9}
+.app.sm{width:36px;height:36px;border-radius:10px}
+.app.sm .ic{width:18px;height:18px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;height:50px;padding:0 24px;border-radius:999px;font:600 16px/1 var(--font);letter-spacing:-.01em;cursor:pointer;border:0;transition:transform .35s var(--spring),filter .3s,background .3s;user-select:none}
+.btn:active{transform:scale(.96)}
+.btn .ic{transition:transform .35s var(--spring)}
+.btn:hover .ic{transform:translateX(3px)}
+.btn-gold{color:#2A1A05;background:var(--g-gold);box-shadow:inset 0 1px 0 rgba(255,255,255,.6),0 12px 28px -12px rgba(228,194,122,.8)}
+.btn-gold:hover{filter:brightness(1.07)}
+.btn-glass{color:var(--t1);background:rgba(255,255,255,.1);border:1px solid var(--stroke);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);box-shadow:var(--hi)}
+.btn-glass:hover{background:rgba(255,255,255,.17)}
+
+/* top nav (floating pill) */
+.top{position:sticky;top:calc(env(safe-area-inset-top,0px) + 14px);z-index:40;display:flex;justify-content:space-between;align-items:center;gap:16px;max-width:var(--max);margin:14px auto 0}
+.brand{display:flex;align-items:center;gap:10px;padding:6px 14px 6px 6px;border-radius:999px}
+.brand .mono{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--g-gold);color:#2A1A05;font:700 13px/1 var(--font);letter-spacing:.02em}
+.brand b{font:600 15px/1 var(--font)}
+.pillnav{position:relative;display:flex;gap:2px;padding:5px;border-radius:999px;list-style:none;margin:0}
+.pillnav .ind{position:absolute;top:5px;left:0;height:calc(100% - 10px);border-radius:999px;background:rgba(255,255,255,.16);box-shadow:inset 0 1px 0 rgba(255,255,255,.25);transition:transform .5s var(--spring),width .5s var(--spring),opacity .3s;opacity:0}
+.pillnav a{position:relative;z-index:1;display:block;padding:9px 15px;border-radius:999px;font:500 14px/1 var(--font);color:var(--t2);transition:color .3s}
+.pillnav a:hover,.pillnav a.active{color:var(--t1)}
+.progress{position:fixed;left:0;top:0;height:2px;width:100%;z-index:50;background:var(--g-gold);transform-origin:left;transform:scaleX(var(--p,0))}
+
+/* bottom tab bar (phones) */
+.tabbar{display:none}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,5vw,64px);align-items:center;padding-block:clamp(48px,7vw,96px) clamp(40px,5vw,64px)}
+.chip{display:inline-flex;align-items:center;gap:9px;padding:8px 14px 8px 10px;border-radius:999px;font:600 13px/1 var(--font);color:var(--gold-2)}
+.chip i{width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 0 rgba(228,194,122,.6);animation:pulse 2.6s infinite}
+h1{margin:22px 0 0;font:700 clamp(46px,7vw,92px)/.98 var(--font);letter-spacing:-.045em}
+h1 span{display:block}
+h1 .bin{font-weight:600;font-size:.46em;letter-spacing:-.02em;margin-top:12px}
+.lede{margin:24px 0 0;max-width:54ch;font-size:clamp(17px,1.45vw,19px);line-height:1.6;color:var(--t2)}
+.lede em{font-style:normal;font-weight:600;color:var(--gold-2)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.tags{list-style:none;padding:0;margin:28px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.tags li{padding:7px 13px;border-radius:999px;font-size:13.5px;color:var(--t2);background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1)}
+
+.photo{position:relative;justify-self:end;width:min(100%,420px)}
+.pcard{position:relative;aspect-ratio:4/5;max-width:100%;border-radius:36px;overflow:visible}
+.pcard .inner{position:absolute;inset:0;border-radius:36px;overflow:hidden;background:radial-gradient(90% 70% at 50% 15%,rgba(180,140,255,.55),rgba(91,45,176,.25) 55%,rgba(20,10,36,.2) 100%)}
+.pcard .inner::before{content:"";position:absolute;inset:14px;border-radius:26px;border:1px solid rgba(228,194,122,.45)}
+.pcard img{position:absolute;left:50%;bottom:0;transform:translateX(-50%);height:100%;width:auto;max-width:none;animation:lift 1.2s .1s var(--spring) both}
+.pcard .dots{right:-30px;top:-26px}
+.seal{position:absolute;left:-40px;bottom:120px;width:112px;height:112px;z-index:4}
+.seal svg{width:100%;height:100%;overflow:visible;animation:spin 30s linear infinite}
+.seal text{font:600 8.2px var(--font);letter-spacing:.32em;fill:var(--gold-2);text-transform:uppercase}
+.seal .core{position:absolute;inset:31%;border-radius:12px;display:grid;place-items:center;background:var(--g-gold);color:#2A1A05;font:700 18px/1 var(--font);box-shadow:0 10px 20px -8px rgba(0,0,0,.6)}
+.now{position:relative;margin:-70px 16px 0;padding:16px 18px;border-radius:24px;z-index:5}
+.now-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.now-head b{font:600 13px/1 var(--font);color:var(--gold-2)}
+.live{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--t3)}
+.live::before{content:"";width:7px;height:7px;border-radius:50%;background:#34C759}
+.now dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:14px}
+.now dt{color:var(--t3)} .now dd{margin:0;color:var(--t1)}
+
+/* widgets (stats) */
+.widgets{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.widget{padding:20px 22px 22px;border-radius:26px;transition:transform .5s var(--spring)}
+.widget:hover{transform:translateY(-4px) scale(1.01)}
+.w-label{display:flex;align-items:center;gap:8px;font:600 12.5px/1 var(--font);color:var(--t3);text-transform:uppercase;letter-spacing:.04em}
+.w-label .ic{width:15px;height:15px;color:var(--gold)}
+.widget b{display:block;margin-top:14px;font:700 clamp(40px,4.4vw,58px)/1 var(--font);letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+.widget b sup{font-size:.34em;font-weight:600;letter-spacing:0;margin-left:3px;vertical-align:top;-webkit-text-fill-color:var(--gold);color:var(--gold)}
+.widget > p{margin:10px 0 0;font-size:14px;line-height:1.45;color:var(--t2)}
+.widget.gold{background:linear-gradient(180deg,rgba(244,218,152,.22),rgba(184,134,46,.10));border-color:rgba(228,194,122,.35)}
+.across{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-top:18px;padding:14px 18px;border-radius:22px}
+.across b{font:600 13px/1 var(--font);color:var(--gold-2)}
+.across ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 18px}
+.across li{font-size:14.5px;color:var(--t2)}
+
+/* sections */
+section{padding-block:clamp(64px,8vw,104px) 0}
+.head{display:grid;grid-template-columns:1fr 1fr;gap:clamp(18px,4vw,56px);align-items:end;margin-bottom:28px}
+.eyebrow{font:600 14px/1 var(--font);color:var(--gold-2)}
+h2{margin:10px 0 0;font:700 clamp(34px,4.6vw,58px)/1.02 var(--font);letter-spacing:-.04em;text-wrap:balance}
+.head p{margin:0;color:var(--t2);max-width:52ch}
+
+/* segmented control */
+.seg{position:relative;display:inline-flex;max-width:100%;overflow-x:auto;scrollbar-width:none;padding:4px;margin-bottom:18px;border-radius:14px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.1)}
+.seg::-webkit-scrollbar{display:none}
+.seg-thumb{position:absolute;top:4px;left:0;height:calc(100% - 8px);border-radius:10px;background:rgba(255,255,255,.2);box-shadow:inset 0 1px 0 rgba(255,255,255,.3),0 4px 12px -4px rgba(0,0,0,.5);transition:transform .45s var(--spring),width .45s var(--spring)}
+.seg-btn{position:relative;z-index:1;flex:0 0 auto;height:36px;padding:0 14px;border:0;background:none;border-radius:10px;color:var(--t2);font:600 14px/1 var(--font);cursor:pointer;white-space:nowrap;transition:color .3s}
+.seg-btn[aria-checked="true"]{color:var(--t1)}
+.seg-btn .n{font-weight:500;opacity:.55;margin-left:3px}
+
+/* cases */
+.cases{display:grid;gap:14px}
+.case{padding:clamp(20px,2.8vw,32px);transition:transform .5s var(--spring),border-color .3s}
+.case:hover{transform:translateY(-3px);border-color:rgba(228,194,122,.35)}
+.case.hide,.shot.hide{display:none}
+.case-top{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.kind{padding:6px 11px;border-radius:999px;font:600 12.5px/1 var(--font);color:var(--violet-2);background:rgba(143,92,240,.18)}
+.no{margin-left:auto;font:600 13px/1 var(--font);color:var(--t3);font-variant-numeric:tabular-nums}
+.case-body{display:grid;grid-template-columns:1.3fr 1fr;gap:clamp(18px,3.5vw,44px)}
+.case h3{margin:0 0 10px;font:700 clamp(22px,2.2vw,28px)/1.15 var(--font);letter-spacing:-.03em}
+.case-main > p{margin:0;color:var(--t2)}
+.out{display:flex;gap:12px;margin-top:16px;padding:14px 16px;border-radius:18px;background:linear-gradient(180deg,rgba(244,218,152,.16),rgba(184,134,46,.07));border:1px solid rgba(228,194,122,.28)}
+.out-ic{width:28px;height:28px;border-radius:8px;display:grid;place-items:center;background:var(--g-gold);color:#2A1A05;flex:0 0 28px}
+.out-ic .ic{width:15px;height:15px;stroke-width:2}
+.out p{margin:0;font-size:15px;color:var(--t1)}
+.out b{display:block;font:600 12.5px/1.4 var(--font);color:var(--gold-2)}
+.facts{margin:0;align-self:start;border-radius:18px;background:rgba(0,0,0,.18);border:1px solid rgba(255,255,255,.06);overflow:hidden}
+.facts .cell{display:grid;grid-template-columns:100px 1fr;gap:12px;padding:11px 16px;position:relative;font-size:14.5px}
+.facts .cell + .cell::before,.group .cell + .cell::before{content:"";position:absolute;left:16px;right:0;top:0;height:1px;background:var(--sep)}
+.facts dt{color:var(--t3)} .facts dd{margin:0;color:var(--t1)}
+.also{margin-top:14px;padding:22px clamp(18px,2.8vw,32px)}
+.also h3{margin:0 0 10px;font:700 20px/1.2 var(--font);letter-spacing:-.02em}
+.also ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 28px}
+.also .cell{position:relative;padding:11px 0 11px 20px;font-size:15px;color:var(--t2);border-top:1px solid var(--sep)}
+.also .cell::after{content:"";position:absolute;left:2px;top:19px;width:7px;height:7px;border-radius:2px;background:var(--gold);transform:rotate(45deg)}
+
+/* steps */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.step{padding:24px 24px 22px;transition:transform .5s var(--spring)}
+.step:hover{transform:translateY(-4px)}
+.step .n{display:inline-grid;place-items:center;width:46px;height:46px;border-radius:14px;background:var(--g-gold);color:#2A1A05;font:700 17px/1 var(--font)}
+.step h3{margin:16px 0 8px;font:700 24px/1.15 var(--font);letter-spacing:-.03em}
+.step p{margin:0;color:var(--t2);font-size:15px}
+.step .eg{display:block;margin-top:16px;padding-top:12px;border-top:1px solid var(--sep);font-size:13px;color:var(--gold-2)}
+
+/* timeline */
+.timeline{position:relative;list-style:none;margin:0;padding:10px clamp(14px,2.4vw,26px) 10px clamp(42px,4.4vw,56px);border-radius:28px}
+.timeline::before{content:"";position:absolute;left:clamp(22px,2.4vw,30px);top:30px;bottom:30px;width:2px;border-radius:1px;background:rgba(255,255,255,.12)}
+.timeline::after{content:"";position:absolute;left:clamp(22px,2.4vw,30px);top:30px;width:2px;border-radius:1px;height:calc((100% - 60px) * var(--t,0));background:var(--g-gold)}
+.job{position:relative;display:grid;grid-template-columns:180px 1fr;gap:clamp(14px,3vw,36px);padding:20px 4px;border-bottom:1px solid var(--sep)}
+.job:last-child{border-bottom:0}
+.node{position:absolute;left:calc(-1 * clamp(42px,4.4vw,56px) + clamp(22px,2.4vw,30px) - 6px);top:27px;width:14px;height:14px;border-radius:50%;background:var(--bg-2);border:2px solid rgba(255,255,255,.3);transition:all .4s var(--spring)}
+.job.on .node{background:var(--gold);border-color:var(--gold-2);box-shadow:0 0 0 5px rgba(228,194,122,.18)}
+.date{display:block;font:600 14.5px/1.3 var(--font);color:var(--t1)}
+.sec{display:block;margin-top:3px;font-size:13.5px;color:var(--t3)}
+.job h3{margin:0;font:700 20px/1.2 var(--font);letter-spacing:-.025em}
+.org{margin:4px 0 0;font-size:14.5px;color:var(--t2)}
+.job ul{margin:10px 0 0;padding-left:18px;font-size:15px;color:var(--t2)}
+.job li{margin-bottom:3px}
+.job li::marker{color:var(--gold)}
+
+/* visual */
+.vwidgets{margin-bottom:22px}
+.shots{columns:4 220px;column-gap:14px}
+.shot{break-inside:avoid;margin:0 0 16px;display:grid;gap:9px}
+.shot button{all:unset;display:block;cursor:zoom-in;border-radius:22px;overflow:hidden;border:1px solid var(--stroke);box-shadow:var(--drop);transition:transform .5s var(--spring)}
+.shot button:hover{transform:scale(1.025)}
+.shot button:active{transform:scale(.98)}
+.shot button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.shot img{display:block;width:100%;height:auto}
+.shot figcaption strong{display:block;font:600 15px/1.3 var(--font);letter-spacing:-.015em}
+.shot figcaption span{font-size:13px;color:var(--t3)}
+.note{margin:4px 0 0;font-size:14px;color:var(--t3)}
+
+/* capabilities */
+.caps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.cap{padding:24px;transition:transform .5s var(--spring),border-color .3s}
+.cap:hover{transform:translateY(-4px);border-color:rgba(228,194,122,.35)}
+.cap-tag{display:block;margin-top:18px;font:600 12.5px/1 var(--font);color:var(--gold-2)}
+.cap h3{margin:8px 0 8px;font:700 20px/1.2 var(--font);letter-spacing:-.025em}
+.cap p{margin:0;font-size:15px;color:var(--t2)}
+
+/* grouped lists (settings style) */
+.record{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,44px)}
+.col{display:grid;gap:26px;align-content:start}
+.ghead{margin:0 0 8px 16px;font:600 13px/1 var(--font);color:var(--t3);text-transform:uppercase;letter-spacing:.05em}
+.group{list-style:none;margin:0;padding:0;border-radius:22px;overflow:hidden}
+.group .cell{position:relative;display:flex;align-items:flex-start;justify-content:space-between;gap:14px;padding:13px 16px}
+.group .cell strong{display:block;font:600 15.5px/1.3 var(--font);letter-spacing:-.015em}
+.group .cell span{display:block;font-size:13.5px;color:var(--t2);margin-top:2px}
+.group .trail{flex:0 0 auto;margin-top:1px !important;font:500 14px/1.3 var(--font) !important;color:var(--gold-2) !important;font-variant-numeric:tabular-nums}
+
+/* contact */
+.contact{position:relative;margin-top:clamp(64px,8vw,104px);padding:clamp(32px,5vw,64px);display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(24px,4vw,56px);align-items:end;border-radius:36px;overflow:hidden}
+.contact .tab.tl{top:0} .contact .tab.br{bottom:0}
+.contact .arcs{left:-90px;bottom:-90px;width:260px;height:260px}
+.contact h2{font-size:clamp(42px,6.4vw,82px)}
+.contact .sub{margin:16px 0 0;color:var(--t2)}
+.clist{border-radius:22px;background:rgba(0,0,0,.2);border:1px solid rgba(255,255,255,.08);overflow:hidden}
+.crow{position:relative;display:flex;align-items:center;gap:14px;padding:13px 14px}
+.crow + .crow::before{content:"";position:absolute;left:66px;right:0;top:0;height:1px;background:var(--sep)}
+.crow .app{width:40px;height:40px;border-radius:11px}
+.crow .app .ic{width:19px;height:19px}
+.crow div{flex:1;min-width:0}
+.crow small{display:block;font-size:12.5px;color:var(--t3)}
+.crow .v{display:block;font:500 16px/1.3 var(--font);overflow-wrap:anywhere;user-select:all}
+.copy{flex:0 0 auto;height:32px;padding:0 13px;border-radius:999px;border:0;background:rgba(228,194,122,.18);color:var(--gold-2);font:600 13.5px/1 var(--font);cursor:pointer;transition:background .25s,transform .3s var(--spring)}
+.copy:hover{background:rgba(228,194,122,.3)}
+.copy:active{transform:scale(.94)}
+footer{position:relative;z-index:2;max-width:var(--max);margin:28px auto 0;padding:18px 4px calc(env(safe-area-inset-bottom,0px) + 32px);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13.5px;color:var(--t3)}
+footer a:hover{color:var(--t1)}
+
+/* HUD toast */
+.hud{position:fixed;left:50%;top:50%;z-index:80;width:150px;padding:22px 16px 18px;border-radius:24px;text-align:center;transform:translate(-50%,-50%) scale(.9);opacity:0;pointer-events:none;background:rgba(40,26,64,.78);-webkit-backdrop-filter:blur(30px) saturate(170%);backdrop-filter:blur(30px) saturate(170%);border:1px solid var(--stroke);transition:opacity .25s,transform .35s var(--spring)}
+.hud.on{opacity:1;transform:translate(-50%,-50%) scale(1)}
+.hud .ic{width:40px;height:40px;color:var(--gold-2);stroke-width:2.2}
+.hud span{display:block;margin-top:8px;font:600 14px/1.3 var(--font)}
+
+/* back to top */
+.totop{position:fixed;right:max(18px,env(safe-area-inset-right,0px));bottom:calc(env(safe-area-inset-bottom,0px) + 20px);z-index:30;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;color:#2A1A05;background:var(--g-gold);border:0;cursor:pointer;box-shadow:0 12px 26px -10px rgba(0,0,0,.7);opacity:0;transform:translateY(14px) scale(.9);pointer-events:none;transition:all .45s var(--spring)}
+.totop.on{opacity:1;transform:none;pointer-events:auto}
+.totop:active{transform:scale(.92)}
+
+/* sheet (lightbox) */
+.scrim{position:fixed;inset:0;z-index:70;background:rgba(8,4,16,.55);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);opacity:0;transition:opacity .35s}
+.scrim.on{opacity:1}
+.scrim[hidden],.sheet[hidden]{display:none}
+.sheet{position:fixed;left:50%;bottom:0;z-index:71;width:min(760px,100%);max-height:94vh;display:flex;flex-direction:column;align-items:center;gap:12px;padding:10px 18px calc(env(safe-area-inset-bottom,0px) + 18px);border-radius:28px 28px 0 0;transform:translate(-50%,100%);transition:transform .55s var(--spring);background:rgba(34,20,58,.82);-webkit-backdrop-filter:blur(36px) saturate(170%);backdrop-filter:blur(36px) saturate(170%);border:1px solid var(--stroke);border-bottom:0;touch-action:pan-y}
+.sheet.on{transform:translate(-50%,0)}
+.grab{width:40px;height:5px;border-radius:3px;background:rgba(255,255,255,.3);margin-bottom:4px}
+.sheet-bar{width:100%;display:flex;align-items:center;justify-content:space-between}
+.sheet-bar .count{font:600 14px/1 var(--font);color:var(--t3)}
+.circ{width:36px;height:36px;border-radius:50%;border:0;background:rgba(255,255,255,.12);color:var(--t1);display:grid;place-items:center;cursor:pointer;transition:background .25s,transform .3s var(--spring)}
+.circ:hover{background:rgba(255,255,255,.2)}
+.circ:active{transform:scale(.9)}
+.circ .ic{width:17px;height:17px;stroke-width:2.2}
+.sheet img{max-width:100%;max-height:64vh;width:auto;height:auto;border-radius:18px;user-select:none;-webkit-user-drag:none}
+.sheet figure{margin:0;display:grid;gap:10px;justify-items:center;min-height:0}
+.sheet figcaption{text-align:center}
+.sheet figcaption strong{display:block;font:700 18px/1.3 var(--font);letter-spacing:-.02em}
+.sheet figcaption span{font-size:13.5px;color:var(--t3)}
+.sheet-nav{display:flex;gap:10px}
+
+/* motion */
+.js .rv.pre{opacity:0;transform:translateY(24px) scale(.985)}
+.rv{transition:opacity .8s var(--spring),transform .8s var(--spring),border-color .3s;transition-delay:var(--d,0s)}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(228,194,122,.6)}70%{box-shadow:0 0 0 9px rgba(228,194,122,0)}100%{box-shadow:0 0 0 0 rgba(228,194,122,0)}}
+@keyframes lift{from{opacity:0;transform:translate(-50%,20px)}to{opacity:1;transform:translate(-50%,0)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}.js .rv.pre{opacity:1;transform:none}}
+
+/* responsive */
+@media (max-width:980px){
+  .hero,.head,.record,.contact{grid-template-columns:1fr}
+  .photo{justify-self:center}
+  .widgets{grid-template-columns:1fr 1fr}
+  .case-body{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .caps{grid-template-columns:1fr 1fr}
+  .pillnav a{padding:9px 11px}
+}
+@media (max-width:760px){
+  body{font-size:16px;padding-bottom:calc(env(safe-area-inset-bottom,0px) + 84px)}
+  .pillnav{display:none}
+  .top{top:calc(env(safe-area-inset-top,0px) + 10px);margin-top:10px}
+  .tabbar{display:flex;position:fixed;left:12px;right:12px;bottom:calc(env(safe-area-inset-bottom,0px) + 10px);z-index:45;justify-content:space-around;padding:7px 6px;border-radius:26px}
+  .tabbar a{flex:1;display:grid;justify-items:center;gap:3px;padding:6px 0;border-radius:18px;font:600 10.5px/1 var(--font);color:var(--t3);transition:color .3s,background .3s}
+  .tabbar a .ic{width:22px;height:22px}
+  .tabbar a.active{color:var(--gold-2);background:rgba(255,255,255,.08)}
+  .totop{display:none}
+  .caps,.also ul{grid-template-columns:1fr}
+  .job{grid-template-columns:1fr;gap:6px}
+  .facts .cell{grid-template-columns:88px 1fr}
+  .seal{left:-14px;bottom:110px;width:92px;height:92px}
+  .pcard .dots{right:-6px}
+  .widget{padding:16px 16px 18px}
+  footer{padding-bottom:16px}
+}
+</style>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Awang Khairul Anwar bin Azaman">
+<meta property="og:description" content="HR governance, compliance and HR digitalisation. Kuching, Sarawak.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23B48CFF'/%3E%3Cstop offset='1' stop-color='%234A2296'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='-apple-system,Segoe UI,Arial,sans-serif' font-size='26' font-weight='700' fill='%23F5DFA3'%3EAK%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<div class="wall" aria-hidden="true"><i class="o1"></i><i class="o2"></i><i class="o3"></i><i class="o4"></i></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="top" id="top">
+  <a class="brand glass" href="#hero" aria-label="Back to top"><span class="mono">AK</span><b>Awang Khairul Anwar</b></a>
+  <nav aria-label="Sections"><ul class="pillnav glass" id="pillnav">
+    <li class="ind" id="ind" aria-hidden="true"></li>
+    <li><a href="#work">Work</a></li><li><a href="#approach">Approach</a></li><li><a href="#experience">Experience</a></li><li><a href="#visual">Visual</a></li><li><a href="#record">Record</a></li><li><a href="#contact">Contact</a></li>
+  </ul></nav>
+</header>
+
+<nav class="tabbar glass" aria-label="Sections">
+  <a href="#work"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2.5"/><path d="M9 7V5h6v2M3 12.5h18"/></svg>Work</a>
+  <a href="#experience"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Experience</a>
+  <a href="#visual"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-8 9"/></svg>Visual</a>
+  <a href="#record"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>Record</a>
+  <a href="#contact"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 7l8.5 6 8.5-6"/></svg>Contact</a>
+</nav>
+
+<main class="wrap" id="hero">
+  <div class="hero">
+    <div>
+      <span class="chip glass"><i aria-hidden="true"></i>HR Governance &#183; Compliance &#183; HR Digitalisation</span>
+      <h1><span class="ms">Awang Khairul</span><span class="mp">Anwar</span><span class="bin mg">bin Azaman</span></h1>
+      <p class="lede">An HR executive who writes the policy and builds the system behind it. Compliance grounded in the Sarawak Labour Ordinance, operating standards now in force, and automation that took <em>the manual work out</em> of payroll for 105 staff across six business units.</p>
+      <div class="cta">
+        <a class="btn btn-gold" href="#work">See selected work <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-glass" href="#contact">Get in touch</a>
+      </div>
+      <ul class="tags" aria-label="Quick facts">
+        <li>Kuching, Sarawak</li><li>BHRD (Hons), UNIMAS &middot; 3.76</li><li>Bahasa Malaysia &amp; English</li><li>Sarawak Labour Ordinance (Cap. 76)</li><li>HR digitalisation</li>
+      </ul>
+    </div>
+    <div class="photo">
+      <div class="pcard glass"><span class="tab tl" aria-hidden="true"></span><span class="tab br" aria-hidden="true"></span><svg class="dots" viewBox="0 0 110 90" aria-hidden="true"><circle cx="5" cy="5" r="2.2"/><circle cx="25" cy="5" r="2.2"/><circle cx="45" cy="5" r="2.2"/><circle cx="65" cy="5" r="2.2"/><circle cx="85" cy="5" r="2.2"/><circle cx="105" cy="5" r="2.2"/><circle cx="5" cy="25" r="2.2"/><circle cx="25" cy="25" r="2.2"/><circle cx="45" cy="25" r="2.2"/><circle cx="65" cy="25" r="2.2"/><circle cx="85" cy="25" r="2.2"/><circle cx="105" cy="25" r="2.2"/><circle cx="5" cy="45" r="2.2"/><circle cx="25" cy="45" r="2.2"/><circle cx="45" cy="45" r="2.2"/><circle cx="65" cy="45" r="2.2"/><circle cx="85" cy="45" r="2.2"/><circle cx="105" cy="45" r="2.2"/><circle cx="5" cy="65" r="2.2"/><circle cx="25" cy="65" r="2.2"/><circle cx="45" cy="65" r="2.2"/><circle cx="65" cy="65" r="2.2"/><circle cx="85" cy="65" r="2.2"/><circle cx="105" cy="65" r="2.2"/><circle cx="5" cy="85" r="2.2"/><circle cx="25" cy="85" r="2.2"/><circle cx="45" cy="85" r="2.2"/><circle cx="65" cy="85" r="2.2"/><circle cx="85" cy="85" r="2.2"/><circle cx="105" cy="85" r="2.2"/></svg>
+        <div class="inner"><img src="assets/portrait.webp" width="574" height="1140" alt="Portrait of Awang Khairul Anwar in a dark suit, arms folded"></div>
+        <div class="seal" aria-hidden="true"><svg viewBox="0 0 128 128"><defs><path id="circ" d="M64,64 m-50,0 a50,50 0 1,1 100,0 a50,50 0 1,1 -100,0"/></defs><text><textPath href="#circ" textLength="312" lengthAdjust="spacing">Human Resources &#183; Administration &#183;</textPath></text></svg><span class="core">A</span></div>
+      </div>
+      <div class="now glass">
+        <div class="now-head"><b>Currently</b><span class="live">Since September 2026</span></div>
+        <dl>
+          <dt>Post</dt><dd>Penolong Pegawai Tadbir (MySTEP)</dd>
+          <dt>Office</dt><dd>Sektor Infrastruktur dan Perolehan, Jabatan Pendidikan Negeri Sarawak</dd>
+          <dt>Before</dt><dd>Executive, HR &amp; Administration, Koperasi Keluarga Sumiran Kuching Berhad</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <div class="widgets" role="list">
+    <div class="widget glass" role="listitem"><span class="w-label"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.3c2 .8 3.5 2.8 3.5 5.7"/></svg>Staff served</span><b class="mp"><span class="cnt" data-to="105">105</span><sup>/6</sup></b><p>staff across six operating units, served by an HR team of two</p></div>
+    <div class="widget glass" role="listitem"><span class="w-label"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4"/><path d="M9 12h6M9 16h6"/></svg>SOP</span><b class="mp"><span class="cnt" data-to="60">60</span><sup>PP</sup></b><p>page operating SOP authored and now in force</p></div>
+    <div class="widget glass" role="listitem"><span class="w-label"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z"/></svg>Merit system</span><b class="mp">1<sup>ST</sup></b><p>group-wide merit and demerit system, designed and rolled out</p></div>
+    <div class="widget glass gold" role="listitem"><span class="w-label"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>Leads</span><b class="mg"><span class="cnt" data-to="1303" data-fmt="comma">1,303</span></b><p>qualified leads in 60 days, leading a team of seven</p></div>
+  </div>
+  <div class="across glass"><b>Experience across</b>
+    <ul><li>Sarawak Energy Berhad</li><li>Jabatan Pendidikan Negeri Sarawak</li><li>Koperasi Keluarga Sumiran Kuching Berhad</li><li>Foreverise Motor Sdn Bhd</li><li>Universiti Malaysia Sarawak</li></ul>
+  </div>
+
+  <section id="work">
+    <div class="head rv">
+      <div><div class="eyebrow">Selected work</div><h2><span class="ms">Files that</span> <span class="mg">hold up</span></h2><span class="goldbar"></span></div>
+      <p>Built for a cooperative running a caf&#233;, central kitchen, catering, an eco park and resort, a training unit and a head office, with 105 staff and two people in HR. Each case shows the problem, what I built and what changed.</p>
+    </div>
+    <div class="seg" role="radiogroup" aria-label="Filter case studies" data-target="cases"><span class="seg-thumb" aria-hidden="true"></span><button class="seg-btn" type="button" role="radio" data-f="all" aria-checked="true">All <span class="n">7</span></button><button class="seg-btn" type="button" role="radio" data-f="policy" aria-checked="false">Policy &amp; compliance <span class="n">3</span></button><button class="seg-btn" type="button" role="radio" data-f="systems" aria-checked="false">Systems &amp; analysis <span class="n">3</span></button><button class="seg-btn" type="button" role="radio" data-f="marketing" aria-checked="false">Marketing <span class="n">1</span></button></div>
+    <div class="cases" id="cases">
+      <article class="case glass rv" data-cat="policy">
+        <header class="case-top"><span class="app sm"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4"/><path d="M9 12h6M9 16h6"/></svg></span><span class="kind">Operations</span><span class="no">01</span></header>
+        <div class="case-body">
+          <div class="case-main">
+            <h3>Sumiran Caf&#233; SOP, Versi 2.0</h3>
+            <p>The operating procedure for the caf&#233;, written in formal Bahasa Malaysia and now in force. It sets who is accountable for what, the code of conduct, every shift from pre-opening to closing, and how service quality is monitored. Staff sign off their competency at rollout.</p>
+            <div class="out"><span class="out-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z"/></svg></span><p><b>Outcome</b>Now the caf&#233;'s operating standard, with competency sign-off for staff at rollout.</p></div>
+          </div>
+          <dl class="facts"><div class="cell"><dt>Length</dt><dd>60 pages</dd></div><div class="cell"><dt>Covers</dt><dd>RACI, code of conduct, pre-operation to closing, SERVQUAL monitoring, document control</dd></div><div class="cell"><dt>Appendix</dt><dd>Eleven control forms, Borang A to K</dd></div><div class="cell"><dt>Status</dt><dd>In force</dd></div></dl>
+        </div>
+      </article>
+      <article class="case glass rv" data-cat="policy">
+        <header class="case-top"><span class="app sm"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M8 20h8M5 7h14"/><path d="M5 7l-3 6a3 3 0 0 0 6 0z"/><path d="M19 7l-3 6a3 3 0 0 0 6 0z"/></svg></span><span class="kind">Discipline</span><span class="no">02</span></header>
+        <div class="case-body">
+          <div class="case-main">
+            <h3>Sistem Merit &amp; Demerit (SMDS)</h3>
+            <p>The group's first merit and demerit scheme across all six units. A shared core applies to everyone and unit modules cover what differs between a kitchen and a resort. Supervisors submit entries through one form, and a dashboard reached by QR code lets every staff member see their own record for the first time.</p>
+            <div class="out"><span class="out-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z"/></svg></span><p><b>Outcome</b>All 105 staff can see their own conduct record for the first time, and supervisors score against one shared standard.</p></div>
+          </div>
+          <dl class="facts"><div class="cell"><dt>Structure</dt><dd>Core + Unit Module, weighted point bands</dd></div><div class="cell"><dt>Legal basis</dt><dd>Sarawak Labour Ordinance (Cap. 76)</dd></div><div class="cell"><dt>Reach</dt><dd>All 105 staff, six units</dd></div><div class="cell"><dt>Evidence</dt><dd>On-site briefings with signed acknowledgement</dd></div></dl>
+        </div>
+      </article>
+      <article class="case glass rv" data-cat="policy">
+        <header class="case-top"><span class="app sm"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span><span class="kind">Compliance</span><span class="no">03</span></header>
+        <div class="case-body">
+          <div class="case-main">
+            <h3>HR compliance suite under the 2025 amendments</h3>
+            <p>The cooperative's policies and procedures brought in line with the Sarawak Labour Ordinance (Amendment) Act 2025: how harassment complaints are made and handled, how a domestic inquiry runs, and how an investigation committee is appointed.</p>
+            <div class="out"><span class="out-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z"/></svg></span><p><b>Outcome</b>Policies brought in line with the 2025 amendments, with a defined route from complaint to inquiry.</p></div>
+          </div>
+          <dl class="facts"><div class="cell"><dt>Policy</dt><dd>16-section sexual harassment policy with statutory wall notice</dd></div><div class="cell"><dt>Procedure</dt><dd>Domestic inquiry, investigation committee appointment</dd></div><div class="cell"><dt>Guide</dt><dd>Labour law compliance guide for management</dd></div></dl>
+        </div>
+      </article>
+      <article class="case glass rv" data-cat="systems">
+        <header class="case-top"><span class="app sm"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20.5 20.5l-4.8-4.8"/></svg></span><span class="kind">Audit</span><span class="no">04</span></header>
+        <div class="case-body">
+          <div class="case-main">
+            <h3>Group attendance audit</h3>
+            <p>A review of how attendance is recorded at all six sites. It found three control failures in how the records are kept and exported. The findings now feed the attendance part of the merit and demerit scoring, and support the case for a single absence reporting channel.</p>
+            <div class="out"><span class="out-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z"/></svg></span><p><b>Outcome</b>Three control failures surfaced; the findings now drive attendance-linked discipline scoring.</p></div>
+          </div>
+          <dl class="facts"><div class="cell"><dt>Scope</dt><dd>Six sites, every recording method in use</dd></div><div class="cell"><dt>Found</dt><dd>Three control failures</dd></div><div class="cell"><dt>Outcome</dt><dd>Basis for attendance-linked discipline scoring</dd></div></dl>
+        </div>
+      </article>
+      <article class="case glass rv" data-cat="systems">
+        <header class="case-top"><span class="app sm"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"/></svg></span><span class="kind">Automation</span><span class="no">05</span></header>
+        <div class="case-body">
+          <div class="case-main">
+            <h3>Payroll and reporting in Apps Script</h3>
+            <p>A payslip generator that reads the monthly salary workbook and produces one PDF per employee, merging staff who appear in several units under different spellings into a single index that can be audited. Alongside it, a daily reporting system that collects every outlet's figures into one management view.</p>
+            <div class="out"><span class="out-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z"/></svg></span><p><b>Outcome</b>A manual payslip process replaced by a single run for 105 employees, with duplicate records flagged for audit.</p></div>
+          </div>
+          <dl class="facts"><div class="cell"><dt>Payslips</dt><dd>105 employees, nine unit sheets, one run</dd></div><div class="cell"><dt>Reporting</dt><dd>Daily, all outlets, Google Forms + Apps Script</dd></div><div class="cell"><dt>Replaced</dt><dd>Manual payslip preparation</dd></div></dl>
+        </div>
+      </article>
+      <article class="case glass rv" data-cat="systems">
+        <header class="case-top"><span class="app sm"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V4M4 20h16"/><path d="M8 16v-4M12 16V8M16 16v-6"/></svg></span><span class="kind">Analysis</span><span class="no">06</span></header>
+        <div class="case-body">
+          <div class="case-main">
+            <h3>Caf&#233; revenue diagnosis for the board</h3>
+            <p>When caf&#233; revenue fell, the question was whether the market had dropped or the caf&#233; had. I built a benchmarking tool that separates the two, then prepared the analysis for the board of directors. The tool can be rerun each period.</p>
+            <div class="out"><span class="out-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z"/></svg></span><p><b>Outcome</b>The board received an evidence-based view of whether the decline was market-wide or internal, and a tool to rerun it.</p></div>
+          </div>
+          <dl class="facts"><div class="cell"><dt>Method</dt><dd>Competitor benchmarking against market movement</dd></div><div class="cell"><dt>Audience</dt><dd>Board of directors</dd></div><div class="cell"><dt>Also</dt><dd>QR-ordering POS comparison put to the board</dd></div></dl>
+        </div>
+      </article>
+      <article class="case glass rv" data-cat="marketing">
+        <header class="case-top"><span class="app sm"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10v4h3l7 4V6L6 10z"/><path d="M16.5 9a4 4 0 0 1 0 6M19 6.5a8 8 0 0 1 0 11"/></svg></span><span class="kind">Marketing</span><span class="no">07</span></header>
+        <div class="case-body">
+          <div class="case-main">
+            <h3>Lead generation for a motor dealership</h3>
+            <p>As Marketing Lead at Foreverise Motor, I ran a five-person marketing team and two customer service staff, reported directly to the Managing Director, and set up an automated response system so new enquiries were answered faster.</p>
+            <div class="out"><span class="out-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z"/></svg></span><p><b>Outcome</b>1,303 qualified leads and 526,710 TikTok engagements in 60 days.</p></div>
+          </div>
+          <dl class="facts"><div class="cell"><dt>Leads</dt><dd>1,303 qualified in 60 days</dd></div><div class="cell"><dt>TikTok</dt><dd>526,710 engagements, +3,863 followers</dd></div><div class="cell"><dt>Facebook</dt><dd>8,698 engagements</dd></div><div class="cell"><dt>Built</dt><dd>Weekly management report, used-car inventory website</dd></div></dl>
+        </div>
+      </article>
+    </div>
+    <div class="also glass rv"><h3>Also delivered</h3><ul><li class="cell">End-to-end recruitment, from screening instrument to interview, with a digital application pipeline</li><li class="cell">Big Five psychometric screening tool used in live recruitment</li><li class="cell">Onboarding programme for an Assistant Outlet Manager at Kuching International Airport</li><li class="cell">Launch pack for a wedding showcase venture: vendor terms, appointment letters, vendor site, timeline and tracker</li><li class="cell">Protocol and hosting for a Suruhanjaya Koperasi Malaysia working visit and the 8th Annual General Meeting</li><li class="cell">Halal inventory control framework</li></ul></div>
+  </section>
+
+  <section id="approach">
+    <div class="head rv">
+      <div><div class="eyebrow">Approach</div><h2><span class="ms">How I</span> <span class="mg">work</span></h2><span class="goldbar"></span></div>
+      <p>The same three steps sit behind every case above, from the attendance audit to the merit and demerit rollout.</p>
+    </div>
+    <ol class="steps">
+      <li class="step glass rv"><span class="n">01</span><h3>Diagnose</h3><p>Audit before prescribing. Check the records, benchmark against the market, and find where the control actually fails.</p><span class="eg">Attendance audit &#183; revenue benchmarking</span></li>
+      <li class="step glass rv"><span class="n">02</span><h3>Design</h3><p>Write it to the law and to the reader. Policy that holds up under Cap. 76, in language a supervisor can apply on shift.</p><span class="eg">SOP Versi 2.0 &#183; SMDS &#183; compliance suite</span></li>
+      <li class="step glass rv"><span class="n">03</span><h3>Embed</h3><p>Brief it, record it, automate it. Signed acknowledgements, one submission form, and dashboards staff can check themselves.</p><span class="eg">On-site briefings &#183; Apps Script &#183; QR dashboard</span></li>
+    </ol>
+  </section>
+
+  <section id="experience">
+    <div class="head rv">
+      <div><div class="eyebrow">Experience</div><h2><span class="ms">Where I have</span> <span class="mg">worked</span></h2><span class="goldbar"></span></div>
+      <p>Public service, a cooperative, a school, a dealership and a utility. The common thread is setting up the process other people run on.</p>
+    </div>
+    <ol class="timeline glass" id="timeline">
+        <li class="job rv"><span class="node" aria-hidden="true"></span>
+          <div class="job-when"><span class="date">Sep 2026 &#8211; Present</span><span class="sec">Government</span></div>
+          <div class="job-main"><h3>Penolong Pegawai Tadbir (MySTEP)</h3><p class="org">Jabatan Pendidikan Negeri Sarawak &#183; Sektor Infrastruktur dan Perolehan</p><ul><li>Payment approvals and minimum wage adjustment claims for outsourced school services</li><li>Contract documentation for security, cleaning and food supply under KPM guidelines</li></ul></div>
+        </li>
+        <li class="job rv"><span class="node" aria-hidden="true"></span>
+          <div class="job-when"><span class="date">Jun &#8211; Sep 2026</span><span class="sec">Cooperative</span></div>
+          <div class="job-main"><h3>Executive, Human Resources &amp; Administration</h3><p class="org">Koperasi Keluarga Sumiran Kuching Berhad &#183; six units, 105 staff</p><ul><li>Authored the caf&#233; SOP now in force and the Cap. 76 compliance suite</li><li>Designed and rolled out the group's first merit and demerit system</li><li>Automated payslips and daily outlet reporting in Apps Script</li></ul></div>
+        </li>
+        <li class="job rv"><span class="node" aria-hidden="true"></span>
+          <div class="job-when"><span class="date">Apr &#8211; Jun 2026</span><span class="sec">Education</span></div>
+          <div class="job-main"><h3>Guru MySTEP</h3><p class="org">SK Bandar Samariang &#183; government teaching placement</p><ul><li>Taught Mathematics and basic Arabic to mixed-ability primary classes</li><li>Kept PBD assessment records and class administration in APDM and SMPK</li></ul></div>
+        </li>
+        <li class="job rv"><span class="node" aria-hidden="true"></span>
+          <div class="job-when"><span class="date">Jan &#8211; Mar 2026</span><span class="sec">Automotive</span></div>
+          <div class="job-main"><h3>Marketing Lead</h3><p class="org">Foreverise Motor Sdn Bhd</p><ul><li>1,303 qualified leads in 60 days with a team of seven</li><li>Reported performance directly to the Managing Director</li></ul></div>
+        </li>
+        <li class="job rv"><span class="node" aria-hidden="true"></span>
+          <div class="job-when"><span class="date">Aug &#8211; Dec 2025</span><span class="sec">Utility</span></div>
+          <div class="job-main"><h3>HR &amp; Corporate Communications Intern</h3><p class="org">Sarawak Energy Berhad</p><ul><li>Co-designed and launched the rebuilt HR Portal landing page for new joiners</li><li>Produced workshop packs, templates and certificates; facilitated three OEPSC workshop series</li></ul></div>
+        </li>
+        <li class="job rv"><span class="node" aria-hidden="true"></span>
+          <div class="job-when"><span class="date">May 2022 &#8211; Feb 2023</span><span class="sec">Hospitality</span></div>
+          <div class="job-main"><h3>Captain / Senior Service Crew</h3><p class="org">Borneo Cultures Museum Restaurant</p><ul><li>Supervised five service staff through launch operations, about 50 covers a day</li><li>Helped screen and interview service crew candidates</li></ul></div>
+        </li>
+    </ol>
+  </section>
+
+  <section id="visual">
+    <div class="head rv">
+      <div><div class="eyebrow">Visual &amp; communications</div><h2><span class="ms">Made to be</span> <span class="mg">seen</span></h2><span class="goldbar"></span></div>
+      <p>Alongside the HR work I design: event and campaign posters, infographics, publications and social content for UNIMAS, Sarawak Energy and commercial clients. For the Isthmus Run, I helped finish 15 designs in a single day.</p>
+    </div>
+    <div class="widgets vwidgets" role="list">
+      <div class="widget glass" role="listitem"><span class="w-label"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.2 0 1.8-.8 1.8-1.7 0-1.3-1-1.6-1-2.6 0-1 .8-1.7 1.8-1.7H17a4 4 0 0 0 4-4c0-4.4-4-8-9-8z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10" cy="7" r="1"/><circle cx="15" cy="7.5" r="1"/></svg>Canva</span><b class="mp"><span class="cnt" data-to="250">250</span><sup>+</sup></b><p>professional assets designed in Canva</p></div>
+      <div class="widget glass" role="listitem"><span class="w-label"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-8 9"/></svg>Posters</span><b class="mp"><span class="cnt" data-to="80">80</span><sup>+</sup></b><p>posters for faculty programmes at UNIMAS</p></div>
+      <div class="widget glass" role="listitem"><span class="w-label"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10v4h3l7 4V6L6 10z"/><path d="M16.5 9a4 4 0 0 1 0 6M19 6.5a8 8 0 0 1 0 11"/></svg>TikTok</span><b class="mp"><span class="cnt" data-to="526" data-suf="k">526k</span></b><p>TikTok engagements in 60 days</p></div>
+      <div class="widget glass gold" role="listitem"><span class="w-label"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4"/><path d="M9 12h6M9 16h6"/></svg>Publication</span><b class="mg">1</b><p>coffee table book, as creative lead and designer</p></div>
+    </div>
+    <div class="seg" role="radiogroup" aria-label="Filter design work" data-target="shots"><span class="seg-thumb" aria-hidden="true"></span><button class="seg-btn" type="button" role="radio" data-f="all" aria-checked="true">All <span class="n">12</span></button><button class="seg-btn" type="button" role="radio" data-f="unimas" aria-checked="false">UNIMAS <span class="n">8</span></button><button class="seg-btn" type="button" role="radio" data-f="seb" aria-checked="false">Sarawak Energy <span class="n">3</span></button><button class="seg-btn" type="button" role="radio" data-f="commercial" aria-checked="false">Commercial <span class="n">1</span></button></div>
+    <div class="shots" id="shots">
+      <figure class="shot rv" data-cat="unimas"><button type="button" aria-label="Open larger: HRD Internship Talk 2.0"><img src="assets/w-022-011.jpg" width="432" height="432" alt="HRD Internship Talk 2.0 poster"></button><figcaption><strong>HRD Internship Talk 2.0</strong><span>UNIMAS HRD Club &#183; 2024</span></figcaption></figure>
+      <figure class="shot rv" data-cat="unimas"><button type="button" aria-label="Open larger: Exemplary Award &amp; AA Meeting"><img src="assets/w-026-069.jpg" width="432" height="432" alt="Exemplary Award &amp; AA Meeting poster"></button><figcaption><strong>Exemplary Award &amp; AA Meeting</strong><span>FSKPM UNIMAS &#183; 2025</span></figcaption></figure>
+      <figure class="shot rv" data-cat="seb"><button type="button" aria-label="Open larger: Tap Here to Power Up"><img src="assets/w-024-040.jpg" width="540" height="483" alt="Tap Here to Power Up poster"></button><figcaption><strong>Tap Here to Power Up</strong><span>Sarawak Energy Isthmus Run &#183; 2024</span></figcaption></figure>
+      <figure class="shot rv" data-cat="unimas"><button type="button" aria-label="Open larger: Flood-affected students by district"><img src="assets/w-028-105.jpg" width="512" height="640" alt="Flood-affected students by district poster"></button><figcaption><strong>Flood-affected students by district</strong><span>FCSHD infographic &#183; 2025</span></figcaption></figure>
+      <figure class="shot rv" data-cat="commercial"><button type="button" aria-label="Open larger: Noodle Combo launch"><img src="assets/w-022-007.jpg" width="432" height="432" alt="Noodle Combo launch poster"></button><figcaption><strong>Noodle Combo launch</strong><span>Gaya Foodie &#183; commercial client</span></figcaption></figure>
+      <figure class="shot rv" data-cat="seb"><button type="button" aria-label="Open larger: Pain Is Temporary"><img src="assets/w-024-044.jpg" width="540" height="483" alt="Pain Is Temporary poster"></button><figcaption><strong>Pain Is Temporary</strong><span>Sarawak Energy Isthmus Run &#183; 2024</span></figcaption></figure>
+      <figure class="shot rv" data-cat="unimas"><button type="button" aria-label="Open larger: Tahfiz Raudhatul Ilmi visit"><img src="assets/w-028-109.jpg" width="512" height="640" alt="Tahfiz Raudhatul Ilmi visit poster"></button><figcaption><strong>Tahfiz Raudhatul Ilmi visit</strong><span>FSKPM Sunnah Bersama &#183; 2025</span></figcaption></figure>
+      <figure class="shot rv" data-cat="unimas"><button type="button" aria-label="Open larger: KESUMAS 2025 committee call"><img src="assets/w-029-119.jpg" width="432" height="540" alt="KESUMAS 2025 committee call poster"></button><figcaption><strong>KESUMAS 2025 committee call</strong><span>UNIMAS &#183; 2025</span></figcaption></figure>
+      <figure class="shot rv" data-cat="unimas"><button type="button" aria-label="Open larger: Happy Lunar New Year"><img src="assets/w-027-094.jpg" width="512" height="512" alt="Happy Lunar New Year poster"></button><figcaption><strong>Happy Lunar New Year</strong><span>FSKPM UNIMAS &#183; 2025</span></figcaption></figure>
+      <figure class="shot rv" data-cat="seb"><button type="button" aria-label="Open larger: You Don&#8217;t Sweat, You Sparkle"><img src="assets/w-024-047.jpg" width="540" height="483" alt="You Don&#8217;t Sweat, You Sparkle poster"></button><figcaption><strong>You Don&#8217;t Sweat, You Sparkle</strong><span>Sarawak Energy Isthmus Run &#183; 2024</span></figcaption></figure>
+      <figure class="shot rv" data-cat="unimas"><button type="button" aria-label="Open larger: FCSHD Cares"><img src="assets/w-028-102.jpg" width="512" height="640" alt="FCSHD Cares poster"></button><figcaption><strong>FCSHD Cares</strong><span>Flood relief notice &#183; 2025</span></figcaption></figure>
+      <figure class="shot rv" data-cat="unimas"><button type="button" aria-label="Open larger: Happy Study Week"><img src="assets/w-026-072.jpg" width="432" height="432" alt="Happy Study Week poster"></button><figcaption><strong>Happy Study Week</strong><span>FSKPM UNIMAS &#183; 2025</span></figcaption></figure>
+    </div>
+    <p class="note">12 of 250+ pieces &#183; full set on request</p>
+  </section>
+
+  <section id="capabilities">
+    <div class="head rv">
+      <div><div class="eyebrow">Capabilities</div><h2><span class="ms">What I</span> <span class="mg">bring</span></h2><span class="goldbar"></span></div>
+      <p>I can read the regulation, write the procedure, build the form that records it, and design the poster that tells staff about it.</p>
+    </div>
+    <div class="caps"><div class="cap glass rv"><span class="app"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M8 20h8M5 7h14"/><path d="M5 7l-3 6a3 3 0 0 0 6 0z"/><path d="M19 7l-3 6a3 3 0 0 0 6 0z"/></svg></span><span class="cap-tag">Governance</span><h3>HR governance &amp; compliance</h3><p>Including the 2021 and 2025 amendments. Discipline, domestic inquiry, harassment and merit and demerit systems.</p></div><div class="cap glass rv"><span class="app"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 6l3 3"/></svg></span><span class="cap-tag">Policy</span><h3>Policy &amp; SOP development</h3><p>SOPs, policies, board papers and implementation plans, in Bahasa Malaysia and English to formal written standard.</p></div><div class="cap glass rv"><span class="app"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"/></svg></span><span class="cap-tag">Digital</span><h3>HR digitalisation &amp; automation</h3><p>Google Apps Script, Sheets and Forms for payroll, daily reporting, applicant pipelines and dashboards.</p></div><div class="cap glass rv"><span class="app"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.3c2 .8 3.5 2.8 3.5 5.7"/></svg></span><span class="cap-tag">Talent</span><h3>Talent acquisition &amp; onboarding</h3><p>Screening instruments, interviews, application pipelines and first-week programmes.</p></div><div class="cap glass rv"><span class="app"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V4M4 20h16"/><path d="M8 16v-4M12 16V8M16 16v-6"/></svg></span><span class="cap-tag">Analytics</span><h3>Workforce analytics &amp; audit</h3><p>Revenue and competitor benchmarking, service quality diagnosis, workforce data audits, SPSS.</p></div><div class="cap glass rv"><span class="app"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.2 0 1.8-.8 1.8-1.7 0-1.3-1-1.6-1-2.6 0-1 .8-1.7 1.8-1.7H17a4 4 0 0 0 4-4c0-4.4-4-8-9-8z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10" cy="7" r="1"/><circle cx="15" cy="7.5" r="1"/></svg></span><span class="cap-tag">Brand</span><h3>Internal comms &amp; employer branding</h3><p>Campaign and event materials, social content and analytics, and intranet pages such as the Sarawak Energy HR Portal landing page.</p></div></div>
+  </section>
+
+  <section id="record">
+    <div class="head rv">
+      <div><div class="eyebrow">Record</div><h2><span class="ms">Education &amp;</span> <span class="mg">leadership</span></h2><span class="goldbar"></span></div>
+      <p>Most of my leadership experience comes from running large student committees at UNIMAS.</p>
+    </div>
+    <div class="record">
+      <div class="col">
+        <div class="rv"><h3 class="ghead">Education</h3><ul class="group glass"><li class="cell"><div><strong>Bachelor of Human Resource Development (Hons)</strong><span>Universiti Malaysia Sarawak &#183; CGPA 3.76</span></div><span class="trail">2025</span></li><li class="cell"><div><strong>Diploma in Building</strong><span>Universiti Teknologi MARA &#183; CGPA 3.78</span></div><span class="trail">2021</span></li><li class="cell"><div><strong>Postgraduate Diploma in Teaching</strong><span>Open University Malaysia &#183; January intake</span></div><span class="trail">2027</span></li></ul></div>
+        <div class="rv"><h3 class="ghead">Development</h3><ul class="group glass"><li class="cell"><div><strong>Disciplinary management</strong><span>National Training Week, UNIMAS Business School</span></div><span class="trail">2026</span></li><li class="cell"><div><strong>Rainforest Youth Summit</strong><span>Delegate representing UNIMAS</span></div><span class="trail">2025</span></li><li class="cell"><div><strong>National Climate Governance Summit</strong><span>Satellite forum participant, SDGs in climate policy</span></div><span class="trail">2024</span></li><li class="cell"><div><strong>Sustainability Design Challenge</strong><span>Green retrofit proposal for an existing building</span></div><span class="trail">2024</span></li><li class="cell"><div><strong>Facilitation is Fun and Easy (FIFE)</strong><span>Sarawak Energy workshop at Bakun; redesigned the session slides</span></div><span class="trail">2024</span></li><li class="cell"><div><strong>What About Kuching</strong><span>Ambassador</span></div><span class="trail">2018&#8211;25</span></li></ul></div>
+      </div>
+      <div class="col"><div class="rv"><h3 class="ghead">Leadership</h3><ul class="group glass"><li class="cell"><div><strong>Project Director, UNIMAS KOQ Festival</strong><span>50+ committee members, RM20,000 budget, over 3,000 participants</span></div><span class="trail">2023</span></li><li class="cell"><div><strong>Vice President, HRD Club UNIMAS</strong><span>100+ committee members across five major events</span></div><span class="trail">2023/24</span></li><li class="cell"><div><strong>Media &amp; Communication Exco, FCSHD</strong><span>80+ posters; creative lead for the faculty coffee table book</span></div><span class="trail">2024/25</span></li><li class="cell"><div><strong>Project Director, HRD Internship Talk 2.0 &amp; 3.0</strong><span>Internship briefings for 200+ HRD students</span></div><span class="trail">2024</span></li><li class="cell"><div><strong>Assistant Project Manager, HRD Showcase</strong><span>Logistics, script supervision and live show control</span></div><span class="trail">2024</span></li><li class="cell"><div><strong>Facilitator &amp; media team, Debat Diraja</strong><span>English debate facilitator; slides for semi-finals, finals and closing</span></div><span class="trail">2024</span></li></ul></div></div>
+    </div>
+  </section>
+
+  <section class="contact glass" id="contact">
+    <span class="tab tl" aria-hidden="true"></span><span class="tab br" aria-hidden="true"></span>
+    <svg class="arcs" viewBox="0 0 260 260" aria-hidden="true"><circle cx="130" cy="130" r="120" stroke-opacity=".4" stroke-width="1.2"/><circle cx="130" cy="130" r="88" stroke-opacity=".25" stroke-width="1.2" stroke-dasharray="5 7"/><circle cx="130" cy="130" r="56" stroke-opacity=".15" stroke-width="1.2"/></svg>
+    <div>
+      <div class="eyebrow">Contact</div>
+      <h2><span class="ms">Let's talk about the</span> <span class="mg">work.</span></h2>
+      <p class="sub">Resume and references on request.</p>
+    </div>
+    <div class="clist">
+      <div class="crow"><span class="app"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 7l8.5 6 8.5-6"/></svg></span><div><small>Email</small><span class="v" id="email">awgkhairulanwar99@gmail.com</span></div><button class="copy" type="button" data-target="email" data-label="Email copied">Copy</button></div>
+      <div class="crow"><span class="app"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg></span><div><small>Phone</small><span class="v" id="phone">+6011-2504 5493</span></div><button class="copy" type="button" data-target="phone" data-label="Number copied">Copy</button></div>
+      <div class="crow"><span class="app"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><small>Location</small><span class="v">Kuching, Sarawak</span></div></div>
+    </div>
+  </section>
+</main>
+<footer><span>Awang Khairul Anwar bin Azaman</span><a href="#hero">Back to top &#8593;</a></footer>
+
+<button class="totop" id="totop" type="button" aria-label="Back to top"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<div class="hud" id="hud" role="status" aria-live="polite"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span id="hudMsg">Copied</span></div>
+<div class="scrim" id="scrim" hidden></div>
+<div class="sheet" id="sheet" hidden role="dialog" aria-modal="true" aria-label="Design preview">
+  <span class="grab" aria-hidden="true"></span>
+  <div class="sheet-bar"><span class="count" id="shCount"></span><button class="circ" id="shClose" type="button" aria-label="Close"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <figure><img id="shImg" alt="" draggable="false"><figcaption id="shCap"></figcaption></figure>
+  <div class="sheet-nav"><button class="circ" id="shPrev" type="button" aria-label="Previous"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button><button class="circ" id="shNext" type="button" aria-label="Next"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button></div>
+</div>
+
+<script>
+(function(){
+  var d=document, R=d.documentElement; R.classList.add('js');
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var $=function(s){return d.querySelector(s)}, $$=function(s){return [].slice.call(d.querySelectorAll(s))};
+  var ids=['work','approach','experience','visual','record','contact'];
+
+  // scroll-linked bits
+  var bar=$('#progress'), totop=$('#totop'), tl=$('#timeline'), jobs=$$('.job');
+  function onScroll(){
+    var h=R.scrollHeight-innerHeight; bar.style.setProperty('--p',h>0?Math.min(1,scrollY/h):0);
+    totop.classList.toggle('on',scrollY>innerHeight*.9);
+    var r=tl.getBoundingClientRect(), mid=innerHeight*.55;
+    tl.style.setProperty('--t',Math.max(0,Math.min(1,(mid-r.top)/r.height)));
+    jobs.forEach(function(j){j.classList.toggle('on',j.getBoundingClientRect().top+28<mid)});
+    if(pl && d.getElementById('work').getBoundingClientRect().top>innerHeight*.5) setActive(null);
+  }
+  addEventListener('scroll',onScroll,{passive:true}); onScroll();
+  totop.addEventListener('click',function(){scrollTo({top:0,behavior:reduce?'auto':'smooth'})});
+
+  // nav: sliding indicator + tab bar state
+  var ind=$('#ind'), pl=$$('#pillnav a'), tabs=$$('.tabbar a'), cur=null;
+  function setActive(id){
+    cur=id;
+    pl.forEach(function(a){
+      var on=a.getAttribute('href')==='#'+id; a.classList.toggle('active',on);
+      if(on){ind.style.opacity=1; ind.style.width=a.offsetWidth+'px'; ind.style.transform='translateX('+a.offsetLeft+'px)';}
+    });
+    if(!id) ind.style.opacity=0;
+    tabs.forEach(function(a){a.classList.toggle('active',a.getAttribute('href')==='#'+id)});
+  }
+  if('IntersectionObserver' in window){
+    var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting) setActive(e.target.id)})},{rootMargin:'-45% 0px -50% 0px'});
+    ids.forEach(function(id){var el=d.getElementById(id); if(el) so.observe(el)});
+  }
+  addEventListener('resize',function(){if(cur) setActive(cur); onScroll(); $$('.seg').forEach(placeThumb)});
+
+  // segmented controls
+  function placeThumb(g){var b=g.querySelector('[aria-checked="true"]'),t=g.querySelector('.seg-thumb'); if(!b) return; t.style.width=b.offsetWidth+'px'; t.style.transform='translateX('+(b.offsetLeft-4)+'px)'; t.style.left='4px';}
+  $$('.seg').forEach(function(g){
+    var box=d.getElementById(g.dataset.target), btns=[].slice.call(g.querySelectorAll('.seg-btn'));
+    placeThumb(g);
+    btns.forEach(function(b){b.addEventListener('click',function(){
+      btns.forEach(function(x){x.setAttribute('aria-checked',x===b)}); placeThumb(g);
+      var f=b.dataset.f;
+      [].slice.call(box.children).forEach(function(it){var s=f==='all'||it.dataset.cat===f; it.classList.toggle('hide',!s); if(s) it.classList.remove('pre');});
+    })});
+  });
+  if(d.fonts&&d.fonts.ready) d.fonts.ready.then(function(){$$('.seg').forEach(placeThumb)});
+
+  // copy + HUD
+  var hud=$('#hud'), hm=$('#hudMsg'), ht;
+  function say(m){hm.textContent=m; hud.classList.add('on'); clearTimeout(ht); ht=setTimeout(function(){hud.classList.remove('on')},1300);}
+  $$('.copy').forEach(function(b){b.addEventListener('click',function(){
+    var el=d.getElementById(b.dataset.target), txt=el.textContent.trim();
+    function sel(){var r=d.createRange(); r.selectNodeContents(el); var s=getSelection(); s.removeAllRanges(); s.addRange(r); say('Selected');}
+    try{navigator.clipboard.writeText(txt).then(function(){say(b.dataset.label)},sel)}catch(e){sel()}
+  })});
+
+  // sheet viewer
+  var scrim=$('#scrim'), sheet=$('#sheet'), si=$('#shImg'), sc=$('#shCap'), sn=$('#shCount'), idx=0, last=null;
+  function vis(){return $$('.shot').filter(function(s){return !s.classList.contains('hide')})}
+  function show(i){var v=vis(); idx=(i+v.length)%v.length; var f=v[idx], im=f.querySelector('img'); si.src=im.src; si.alt=im.alt; sc.innerHTML=f.querySelector('figcaption').innerHTML; sn.textContent=(idx+1)+' of '+v.length;}
+  function open(f){last=f.querySelector('button'); show(vis().indexOf(f)); scrim.hidden=false; sheet.hidden=false; requestAnimationFrame(function(){requestAnimationFrame(function(){scrim.classList.add('on'); sheet.classList.add('on'); $('#shClose').focus();})});}
+  function close(){scrim.classList.remove('on'); sheet.classList.remove('on'); sheet.style.transform=''; setTimeout(function(){scrim.hidden=true; sheet.hidden=true; si.removeAttribute('src');},reduce?0:450); if(last) last.focus();}
+  $$('.shot button').forEach(function(b){b.addEventListener('click',function(){open(b.closest('.shot'))})});
+  scrim.addEventListener('click',close); $('#shClose').addEventListener('click',close);
+  $('#shPrev').addEventListener('click',function(){show(idx-1)}); $('#shNext').addEventListener('click',function(){show(idx+1)});
+  d.addEventListener('keydown',function(e){if(sheet.hidden) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') show(idx-1); if(e.key==='ArrowRight') show(idx+1);});
+  // swipe: left/right to browse, down to dismiss
+  var sx=0, sy=0, dy=0, drag=false;
+  sheet.addEventListener('touchstart',function(e){var t=e.touches[0]; sx=t.clientX; sy=t.clientY; dy=0; drag=true; sheet.style.transition='none';},{passive:true});
+  sheet.addEventListener('touchmove',function(e){if(!drag) return; var t=e.touches[0]; dy=Math.max(0,t.clientY-sy); if(dy>0) sheet.style.transform='translate(-50%,'+dy+'px)';},{passive:true});
+  sheet.addEventListener('touchend',function(e){drag=false; sheet.style.transition=''; var t=e.changedTouches[0], dx=t.clientX-sx;
+    if(dy>110){close(); return;} sheet.style.transform='';
+    if(Math.abs(dx)>60&&Math.abs(dx)>dy) show(idx+(dx<0?1:-1));});
+
+  if(reduce||!('IntersectionObserver' in window)) return;
+  var els=$$('.rv'), groups=new Map();
+  els.forEach(function(el){var r=el.getBoundingClientRect(); if(r.top>innerHeight*.95){var p=el.parentElement,n=groups.get(p)||0; groups.set(p,n+1); el.style.setProperty('--d',Math.min(n,4)*.07+'s'); el.classList.add('pre');}});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('pre'); io.unobserve(e.target);}})},{rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(el){if(el.classList.contains('pre')) io.observe(el)});
+  var co=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(!e.isIntersecting) return; co.unobserve(e.target);
+    var el=e.target,to=+el.dataset.to,suf=el.dataset.suf||'',comma=el.dataset.fmt==='comma',t0=null;
+    function f(n){var v=Math.round(n); return (comma?v.toLocaleString('en-US'):String(v))+suf;}
+    function step(t){if(!t0)t0=t; var k=Math.min(1,(t-t0)/1300); k=1-Math.pow(1-k,3); el.textContent=f(to*k); if(k<1) requestAnimationFrame(step);}
+    requestAnimationFrame(step);
+  })},{threshold:.6});
+  $$('.cnt').forEach(function(el){co.observe(el)});
+})();
+</script>
+</body>
+</html>
